@@ -52,6 +52,23 @@ public class CalculatorTest {
         double resultAdd = mCalculator.add(1d, 1d);
         assertThat(resultAdd, is(equalTo(2d)));
     }
+    @Test
+    public void subtractTwoNumbers() {
+        double resultSubtract = mCalculator.sub(1d, 0d);
+        assertThat(resultSubtract, is(equalTo(1d)));
+    }
+
+    @Test
+    public void multiplyTwoNumbers(){
+        double resultMultiply = mCalculator.mul(2d, 2d);
+        assertThat(resultMultiply, is(equalTo(4d)));
+    }
+
+    @Test
+    public void divideTwoNumber(){
+        double resultDivide = mCalculator.div(8d, 2d);
+        assertThat(resultDivide, is(equalTo(4d)));
+    }
 
 
 
